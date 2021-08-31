@@ -19,7 +19,7 @@ module PumaCloudwatch
         }
 
         clustered = stats.key?("worker_status")
-        pp stats
+
         if clustered
           statuses = stats["worker_status"].map { |s| s["last_status"] } # last_status: Array with worker stats
           statuses.each do |status|
