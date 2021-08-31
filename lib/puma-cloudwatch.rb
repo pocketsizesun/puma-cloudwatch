@@ -1,1 +1,1 @@
-require_relative "puma_cloudwatch"
+require 'puma_cloudwatch'
